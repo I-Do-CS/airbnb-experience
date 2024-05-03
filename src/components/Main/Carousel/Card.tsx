@@ -1,8 +1,15 @@
 import star from "../../../images/star.png";
 
-export default function Card(props: experience) {
-  const { title, rating, ratingCount, imgUrl, price, status } = props;
-
+export default function Card({
+  title,
+  rating,
+  ratingCount,
+  imgUrl,
+  price,
+  openSpots,
+  location,
+}: experience) {
+  const status = openSpots > 0 ? "online" : "sold out";
   return (
     <div className="flex w-[240px] flex-col gap-2">
       <div>
@@ -22,7 +29,7 @@ export default function Card(props: experience) {
           {rating}
           <span className="font-semibold text-gray-400">
             {" "}
-            ({ratingCount}) &middot; USA
+            ({ratingCount}) &middot; {location}
           </span>
         </span>
 

@@ -10,7 +10,8 @@ const experiences: experience[] = [
     ratingCount: 6,
     imgUrl: athlete,
     price: "136",
-    status: "online",
+    location: "USA",
+    openSpots: 3,
   },
   {
     title: "Learn wedding photography",
@@ -18,7 +19,8 @@ const experiences: experience[] = [
     ratingCount: 30,
     imgUrl: bride,
     price: "125",
-    status: "sold out",
+    location: "Online",
+    openSpots: Infinity,
   },
   {
     title: "Group Mountain Biking",
@@ -26,7 +28,8 @@ const experiences: experience[] = [
     ratingCount: 2,
     imgUrl: bike,
     price: "50",
-    status: "online",
+    location: "Norway",
+    openSpots: 0,
   },
 ];
 

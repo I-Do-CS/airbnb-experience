@@ -4,5 +4,6 @@ type experience = {
   ratingCount: number;
   imgUrl: string;
   price: string;
-  status: string;
+  location: string;
+  openSpots: number;
 };
